@@ -7,7 +7,6 @@ using namespace std;
 #define MAX 100
 
 bool matrix_reader(string file, int matrix[][MAX], int &size);
-void print_matrix(int a[][MAX], int size);
 
 int main()
 {
@@ -15,7 +14,7 @@ int main()
     int size;
     if(matrix_reader("file_1.txt", matrix, size))
     {
-        cout << "đọc file dc r ae";
+        cout << "đọc file dc r ae, làm gì làm sau";
     }
     else 
     {
@@ -23,8 +22,6 @@ int main()
     }
     return 0;
 }
-
-
 /*
     hàm này đọc ma trận từ file text
     string file: đường dẫn file text
@@ -75,17 +72,4 @@ bool matrix_reader(string file, int matrix[][MAX], int &size)
     if(size != rows) return false;
     whatToRead.close();
     return true;
-}
-
-/*
-    hàm này xuất ma trận ra thôi
-*/
-void print_matrix(int a[][MAX], int size)
-{
-    for(int i = 0; i < size; ++i){
-        for(int j = 0; j < size; j++){
-            cout << a[i][j] << "t";
-        }
-        cout << "n";
-    }
 }
