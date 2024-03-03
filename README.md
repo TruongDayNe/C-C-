@@ -1,20 +1,10 @@
-# Up source Tháp Hà Nội đệ quy 
+# Đôi lời muốn nói
 
-#include<iostream>
-using namespace std;
-void Tower(int n , char a, char b, char c ){
-	if(n==1){
-		cout<<"\t"<<a<<"-------"<<c<<endl;
-		return;
-	}
-	Tower(n-1,a,c,b);
-	Tower(1,a,b,c);
-	Tower(n-1,b,a,c);
-	}
-int main(){
-	char a='A', b='B', c='C';
-	int n;
-	cout<<"Nhap n: ";
-	cin>>n;
-	Tower(n,a,b,c);
-}
+Thân gửi,
+
+Em xin chào tất cả những ai đã đến với repo này, vì hầu hết những ai vào đây chủ yếu là do em hỏi bài.
+Em có vài lời muốn nói đó là : "Biết ơn những người đã rời đi, trân trọng những ai còn ở lại"
+Rời đi vì đã giúp em xong, còn ở lại là đang giúp em. 
+Em rất biết ơn,
+
+Trường
