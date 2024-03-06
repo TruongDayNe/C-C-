@@ -21,7 +21,7 @@ using namespace std;
 #define MAX 100
 
 bool matrix_reader(string file, float matrix[][MAX], int &size);
-void printMatrix(float matrix[MAX][MAX], int size);
+void printMatrix(float matrix[][MAX], int size);
 void saveMatrixToFile(float result1[][MAX], float result2[][MAX], int size, int col1, int col2, string filename);
 void multiplyMatrix(float matrix[][MAX], float matrix2[][MAX], int size, float result[][MAX]);
 void sumMatrix ( float matrix1[][MAX], float matrix2[][MAX], int size , float result[][MAX]);
@@ -122,7 +122,7 @@ bool matrix_reader(string file, float matrix[][MAX], int &size)
     return true;
 }
 
-void printMatrix(float matrix[MAX][MAX], int size) 
+void printMatrix(float matrix[][MAX], int size) 
 {
 	for (int i=0; i<size; i++) 
 	{
